@@ -1,0 +1,9 @@
+<h3>
+  Jacques Louis David　作品ID一覧
+</h3>
+
+<% @objectIDs.each do |objectId| %>
+  <p>
+    <%=link_to objectId, collection_path(objectId) %>
+  </p>
+<% end %>

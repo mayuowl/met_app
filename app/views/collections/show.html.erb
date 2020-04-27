@@ -1,0 +1,23 @@
+<h3>
+  Jacques Louis David　作品ID詳細
+</h3>
+
+<p>
+  タイトル：
+  <%= @object['title'] %>
+</p>
+<p>
+  使用された材料:
+  <%= @object['medium'] %>
+</p>
+<p>
+  作成時期:
+  <%= @object['period'] %>
+</p>
+<p>
+  <%= image_tag @object['primaryImage'] %>
+</p>
+<p>
+  作者:
+  <%= link_to @object['artistDisplayName'], @object['artistWikidata_URL'] %>
+</p>
